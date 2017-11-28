@@ -1,9 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
         sh 'echo $HOME'
+        sh 'echo %username&'
       }
     }
   }
